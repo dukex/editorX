@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="api-key" value="<%= Tumblr::KEY %>">
+    <link rel="stylesheet" href="assets/app.css" type="text/css">
+    <script src="assets/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1> Editor<span>X</span></h1>
+      <% if current_user %>
+      <form id="change_post">
+        <a id="new_post" href="#"> new post </a>
+        <select id="posts">
+          <option></option>
+        </select>
+      </form>
+      <% end %>
+    </header>
+    <% if current_user %>
+      <div id="editorx">
+      </div>
+    <% else %>
+      <a id="login" href="/auth/tumblr"> Login </a>
+    <% end %>
+  </body>
+</html>
