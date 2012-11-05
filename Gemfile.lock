@@ -25,6 +25,7 @@ GEM
     coffee-script-source (1.3.3)
     daemons (1.1.9)
     eventmachine (1.0.0)
+    evernote-thrift (1.22.1)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.1.5)
@@ -44,6 +45,10 @@ GEM
     omniauth (1.1.1)
       hashie (~> 1.2)
       rack
+    omniauth-evernote (1.2.0)
+      evernote-thrift
+      multi_json (~> 1.0)
+      omniauth-oauth (~> 1.0)
     omniauth-oauth (1.0.1)
       oauth
       omniauth (~> 1.0)
@@ -96,6 +101,7 @@ DEPENDENCIES
   catapult
   foreman
   json
+  omniauth-evernote
   omniauth-tumblr!
   pry
   rack-cors

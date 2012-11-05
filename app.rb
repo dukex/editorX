@@ -58,7 +58,7 @@ class EditorX < Sinatra::Base
     erb :index
   end
 
-  get "/auth/tumblr/callback" do
+  get "/auth/:provider/callback" do
     auth_data = request.env['omniauth.auth']
     session[:access_token] = auth_data["extra"].first[1]
     session[:auth] = {info: auth_data.info, credentials: auth_data.credentials}
