@@ -49,6 +49,10 @@ class EditorX < Sinatra::Base
     provider :tumblr, ENV['TUMBLR_KEY'] || Tumblr::KEY , ENV['TUMBLR_SECRET'] || Tumblr::SECRET
   end
 
+  use OmniAuth::Builder do
+    provider :evernote, ENV['EVERNOTE_KEY'], ENV['EVERNOTE_SECRET'], :client_options => { :site => ENV['EVERNOTE_SITE'] }
+  end
+
   get "/" do
     @current_user = current_user
     erb :index
