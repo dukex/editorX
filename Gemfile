@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rack-cors', :require => 'rack/cors'
+gem 'sass'
 gem 'sinatra'
 gem 'shotgun'
 gem 'pry'

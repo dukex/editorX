@@ -1,41 +1,6 @@
 /*= require ./vendor/reset */
 /*= require_tree ./vendor */
+/*= require editorx */
 /*= require_self*/
-
-@import url(http://fonts.googleapis.com/css?family=Molle:400italic);
-
-body{
-  background: #F1F1F1;
-}
-
-header{
-  width: 800px;
-  margin: 5px auto;
-  overflow: hidden;
-}
-
-header.off *{
-  opacity: 0.2
-}
-
-header h1{
-  font-size: 20px;
-  font-weight: 700;
-  font-family: 'Molle', cursive;
-  text-shadow: 1px 1px 1px #FFF;
-  color: #FF3D7F;
-  float: left;
-}
-
-form#change_post{
-  float: right;
-}
-
-#editorx{
-  min-height: 500px;
-  width: 800px;
-  margin: 0 auto;
-}
-
 
 

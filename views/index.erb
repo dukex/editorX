@@ -6,6 +6,7 @@
     <script src="assets/app.js"></script>
   </head>
   <body>
+    <div>
     <header>
       <h1> Editor<span>X</span></h1>
       <% if current_user %>
@@ -21,7 +22,9 @@
       <div id="editorx">
       </div>
     <% else %>
-      <a id="login" href="/auth/tumblr"> Login </a>
+      <a id="login" href="/auth/tumblr"> Use Tumblr </a>
+      <a id="login" href="/auth/evernote"> Use Evernote </a>
     <% end %>
+    </div>
   </body>
 </html>
