@@ -9,4 +9,4 @@ gem 'omniauth-tumblr', :git => 'git://github.com/jamiew/omniauth-tumblr.git'
 gem 'catapult'
 gem 'rest-client'
 gem 'json'
-
+gem 'foreman'

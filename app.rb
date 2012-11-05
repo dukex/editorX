@@ -1,7 +1,4 @@
 class Tumblr
-  KEY = "qRXke3SZUjmrSvgwPIROVeMgkXzEM2rdu6MUr0fxxXBFyw7RVN"
-  SECRET = "NtwPb7Usx382bEUn8oiMH5FIKQykoclizCnhEeMTYrDYyhJvzZ"
-
   def drafts(blog_name)
     draft_url = "http://api.tumblr.com/v2/blog/#{blog_name}.tumblr.com/posts/draft"
     response = request.get(draft_url)

@@ -28,6 +28,8 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.1.5)
+    foreman (0.60.2)
+      thor (>= 0.13.6)
     hashie (1.2.0)
     hike (1.2.1)
     json (1.7.5)
@@ -92,6 +94,7 @@ PLATFORMS
 
 DEPENDENCIES
   catapult
+  foreman
   json
   omniauth-tumblr!
   pry
