@@ -2,28 +2,36 @@
 <html>
   <head>
     <link rel="stylesheet" href="assets/app.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="assets/app.js"></script>
   </head>
   <body>
-    <div>
-    <header>
-      <h1> Editor<span>X</span></h1>
-      <% if current_user %>
-      <form id="change_post">
-        <a id="new_post" href="#"> new post </a>
-        <select id="posts">
-          <option></option>
-        </select>
-      </form>
-      <% end %>
-    </header>
-    <% if current_user %>
-      <div id="editorx">
+    <div class="navbar navbar-fixed-top ">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <a class="brand" href="#">EditorX</a>
+
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a id="login" href="/auth/tumblr"> Use Tumblr </a></li>
+              <li><a id="login" href="/auth/evernote"> Use Evernote </a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    <% else %>
-      <a id="login" href="/auth/tumblr"> Use Tumblr </a>
-      <a id="login" href="/auth/evernote"> Use Evernote </a>
-    <% end %>
+    </div>
+    <div class="container">
+      <% if current_user %>
+        <div id="editorx">
+        </div>
+      <% end %>
     </div>
   </body>
 </html>
